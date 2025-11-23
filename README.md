@@ -18,3 +18,7 @@ docker run  \
   -e SMTP_PORT="587" \
   museum-pass-checker:latest
 ```
+
+## Sample email
+
+<img width="745" height="221" alt="image" src="https://github.com/user-attachments/assets/c94e1bf8-b27b-41b3-8c73-55ae69daed25" />
