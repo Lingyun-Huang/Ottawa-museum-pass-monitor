@@ -89,7 +89,7 @@ Library Hours:
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             server.login(sender, password)
-            server.sendmail(sender, receiver, msg.as_string())
+            server.sendmail(sender, receiver.split(','), msg.as_string())
         logger.info("Email sent!")
     except Exception as e:
         logger.info("Email sending failed:", e)
