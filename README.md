@@ -11,11 +11,9 @@ Sample command
 ```
 docker run  \
   -e TARGET_BRANCHES="Main,Beaverbrook,Vernon" \
-  -e SMTP_USER="<xxx>@gmail.com" \
-  -e SMTP_PASS="<xxx>" \
-  -e SMTP_HOST="smtp.gmail.com" \
+  -e GMAIL_USER="<xxx>@gmail.com" \
+  -e GMAIL_APP_PASSWORD="<xxx>" \
   -e EMAIL_TO="<xxx>@gmail.com" \
-  -e SMTP_PORT="587" \
   museum-pass-checker:latest
 ```
 
